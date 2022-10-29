@@ -32,3 +32,28 @@ print("--------------------------------------------")
 Now I want to move the square to the middle, in stead of the far left. 
 How can I do this? -- HOMEWORK
 '''
+
+star_line = ' ' * 5 + '*' * 5
+
+'''
+these 2 lines are exactly the same:
+star_line = ' ' * 5 
+star_line = '     '
+'''
+
+print(star_line)
+print(star_line)
+print(star_line)
+print(star_line)
+print(star_line)
+
+
+print("--------------------------------------------")
+
+left_star_right_star =  ' ' * 5 + '*' + ' ' * 3 + '*'
+
+print(star_line)
+print(left_star_right_star)
+print(left_star_right_star)
+print(left_star_right_star)
+print(star_line)
