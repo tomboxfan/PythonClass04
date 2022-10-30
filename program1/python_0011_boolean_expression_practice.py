@@ -38,8 +38,14 @@ Q4) We have more boys than girls, right?
 '''
 
 '''
-Q5) there is more than 5 boys than girls, right? 
+Q5) there are more than 5 boys than girls, right?  In Chinese: 男孩儿人数比女孩儿人数多超过5个
 '''
+
+'''
+Q6) there are 5 more boys than girls, right?  In Chinese: 男孩儿比女孩儿人数多5个
+'''
+
+
 
 
 
