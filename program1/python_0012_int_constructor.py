@@ -54,6 +54,8 @@ int_e = int(3.9)
 int_f = int(-4.1)
 int_g = int(-5.9)
 
+print(int_d, int_e, int_f, int_g)
+
 '''
 1) guess the value of the 4 int variables.
 2) print the 4 int variables to console.
