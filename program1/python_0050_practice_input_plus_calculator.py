@@ -3,7 +3,20 @@
 int_a = input("Number a: ")
 int_b = input("Number b: ")
 
+'''
+The actual value here is:
+int_a : '12'
+int_b : '23'
+Both of them are string
+'''
+
 result = int_a + int_b
+'''
+If you add them together, it equals to join them together
+
+'12' + '23' = '1223'
+'''
+
 
 print(f"{int_a} + {int_b} = {result}")
 

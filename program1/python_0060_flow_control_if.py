@@ -25,6 +25,19 @@ if today == 'Saturday': # after you type colon, you press 'enter', pycharm helps
     print("I start working on Python homework at 12 pm.")
 
 
+'''
+最重要的是：对齐！上下对齐！
+最重要的是：对齐！上下对齐！
+最重要的是：对齐！上下对齐！
+最重要的是：对齐！上下对齐！
+最重要的是：对齐！上下对齐！
+最重要的是：对齐！上下对齐！
+最重要的是：对齐！上下对齐！
+最重要的是：对齐！上下对齐！
+
+Python 根据 这些'对齐' 来把代码分组！
+'''
+
 
 
 print("I have my lunch at 1pm.")
