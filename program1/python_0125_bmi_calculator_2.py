@@ -11,39 +11,26 @@
 
 
 
-# PART 1) DEFINE VARIABLES ====================================
-
-# type 1) DEFEIN VARIABLES FROM THE QUESTION ------------------
 height = float(input("Enter height in meters: "))
 weight = float(input("Enter weight in kg: "))
 
-# Type 2) DEFINE VARIABLE WHICH IS TO SAVE THE RESULT ---------
-bmi = 0
-msg = ''
-
-# Type 3) OTHER EXTRA VARIABLES ------------------------------
-
-
-# PART 2) YOUR ALGO ===========================================
-
 bmi = weight / (height ** 2)
+print(f"Your BMI is: {bmi:.3f}")
+
 
 if 0 <= bmi < 16:
-    msg = 'You are severely underweight'
+    print('You are severely underweight')
 
 elif 16 <= bmi < 18.5:
-    msg = 'You are underweight'
+    print('You are underweight')
 
 elif 18.5 <= bmi < 25:
-    msg = 'You are healthy'
+    print('You are healthy')
 
 elif 25 <= bmi < 30:
-    msg = 'You are overweight'
+    print('You are overweight')
 
 else:
-    msg = 'You are severely overweight'
+    print('You are severely overweight')
 
 
-# PART 3 PRINT THE RESULT =====================================
-print(f"Your BMI is: {bmi:.3f}")
-print(msg)
