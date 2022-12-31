@@ -69,8 +69,47 @@ if product_name == 'beef' or product_name == 'pork' or product_name == 'tomato':
     print(f"{product_name} : ${unit_price} * {total_weight} = ${total_price}")
 
 elif product_name == 'apple' or product_name == 'orange':
-    # HOMEWORK
-    pass
+
+    # 1st step: You need to know : how many fruits does the customer buy?
+    total_count = int(input("Total quantity:"))
+
+    if product_name == 'apple':
+
+        '''
+        2nd step:
+        4 apples = 0 group of 5 apples, and 4 apples
+        8 apples = 1 group of 5 apples, and 3 apples
+        22 apples = 4 groups of 5 apples, and 2 apples
+        '''
+        group_count = total_count // 5
+        single_count = total_count % 5
+
+        # 3rd step
+        group_price = 5     # $5 for 5 apples
+        single_price = 1.6  # 1.6 each
+
+    else: # orange
+
+        # 2nd step)
+        group_count = total_count // 3
+        single_count = total_count % 3
+
+        # 3rd step)
+        group_price = 5     # $5 for 3 oranges
+        single_price = 2  # $2 each
+
+
+    # 4th step)
+    group_price_total = group_price * group_count
+    single_price_total = single_price * single_count
+    total_price = group_price_total + single_price_total
+    print(f"{product_name} : ${total_price}")
+
+
+
+
+
+
 
 else:
 
@@ -100,4 +139,52 @@ We support 3 payment methods:
 1) Visa / Mastercard - signature required
 2) NETS - password required
 3) Cash - changes required 
+'''
+
+payment = input("Will you pay using Visa / Mastercard / NETS / Cash? ")
+
+if payment.lower() == 'visa' or payment.lower() == 'mastercard':
+    signature = input("Please sign your name: ")
+    print(f"Signature {signature} is well received!")
+    print(f"${total_price} has been charged to your {payment} card.")
+
+elif payment.lower() == "nets":
+    password = input("Please input your NETS card password: ")
+    print(f"${total_price} has been charged to your NETS card.")
+
+elif payment.lower() == 'cash':
+    total_paid = float(input("How much will you pay? : "))
+
+    if total_paid > total_price:
+        change = total_paid - total_price
+        print(f"Here comes your change: ${change}")
+    elif total_paid < total_price:
+        print(f"You are still short of ${total_price - total_paid}. I am sorry, I cannot give your {product_name}")
+    else:
+        print("You've paid the exact amount.")
+
+else:
+    print("Unsupported payment.")
+
+
+
+bye_msg = '''
+*********************
+   See you again! 
+*********************
+'''
+
+print(bye_msg)
+
+
+
+
+
+
+
+
+
+'''
+alt + shift + up -> move block of code up
+alt + shift + down -> move block of code down
 '''
