@@ -5,13 +5,36 @@ Step 2) Use while loop, loop as long as player_a's input is NOT 'exit'.
 Step 3) Inside the while loop body, you ask player_b to input 'scissors', 'paper', 'stone'.
 Step 4) Use if / elif / else or nested if / elif / else to check who wins, print the result.
 '''
+import random
 
 user_a_choice = input("User A's choice (scissors / paper / stone / exit): ")
 
 while user_a_choice != 'exit':
 
     # step 3)
-    user_b_choice = input("User B's choice (scissors / paper / stone): ")
+
+    # CODE DELETE
+    # user_b_choice = input("User B's choice (scissors / paper / stone): ")
+
+
+    # CODE ADD BEGIN --------------------------------------
+    robot_choice = random.randint(1, 3)
+
+    if robot_choice == 1:
+        user_b_choice = 'scissors'
+    elif robot_choice == 2:
+        user_b_choice = 'paper'
+    else:
+        user_b_choice = 'stone'
+
+    # CODE ADD END --------------------------------------
+    '''
+    ctrl + / : this helps you change a code to comment, or change a comment back to code
+    '''
+
+
+
+
 
 
     # step 4)
