@@ -8,20 +8,15 @@ Requirement:
 Comparing with Version 1:
 You need to check the validity of the student's score, it must be in range [30, 100]
 
-----------
-Sample
-----------
-How many students: 5
-Student 1 score: 20
-Wrong input, please try again ...
-Student 1 score: 60
-Student 2 score: 70
-Student 3 score: 101
-Wrong input, please try again ...
-Student 3 score: 100
-Student 4 score: 90
-Student 5 score: 75
-Average score is: 79.00
+
+New Requirement for Version 3)
+Round a score to the next multiple of 5 if it is not a failing score.
+
+If the difference between the score and the next multiple of 5 is less than 3, round grade up to the next multiple of 5.
+If the score is less than 58, no rounding occurs, as it is a failing score.
+For example: score = 84, round to 85 (because 85 - 84 less than 3)
+             score = 57, no rounding (because 57 is less than 58)
+             score = 67, no rounding ( because 70 - 67 is 3 or greater)
 '''
 
 # Step 1) PREPARE DATA BEGIN =======================================
@@ -36,14 +31,25 @@ average_score = 0
 
 for student_no in range(student_count):
 
-
-    # score = int(input(f"Student {student_no + 1} score: "))
+    # Step 2.1) check score validity, repeat until user inputs a score fall in range [30, 100]
     score = 0 # put a init value to score variable
 
     while score < 30 or score > 100:
         score = int(input(f"Student {student_no + 1} score: ")) # update looping variable
         if score < 30 or score > 100:
             print('Wrong input, please try again ...')
+
+
+
+    # Step 2.2) round the score to the next multiple of 5 if it is not a failing score
+    '''
+    if <boolean expression>: 
+        # round the score
+        score = ...
+        print(f"After rounding, your score is: {score}")
+    else:
+        print(f"No round is required. Your score is: {score}")
+    '''
 
     total_score += score
 
