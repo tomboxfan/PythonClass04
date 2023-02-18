@@ -42,14 +42,12 @@ for student_no in range(student_count):
 
 
     # Step 2.2) round the score to the next multiple of 5 if it is not a failing score
-    '''
-    if <boolean expression>: 
-        # round the score
-        score = ...
+    if score % 5 >= 3 and score >= 58:      # the boolean expression is difficult!
+        score = score + (5 - score % 5)     # this expression is difficult!
         print(f"After rounding, your score is: {score}")
     else:
-        print(f"No round is required. Your score is: {score}")
-    '''
+        print(f"No rounding is required. Your score is: {score}")
+
 
     total_score += score
 

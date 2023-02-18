@@ -1,5 +1,12 @@
 
 
+print("range(5) generates number from 0 to 4, no 5! - [0, 5)")
+for i in range(5):
+    print(i)
+
+print('--------------------------')
+
+
 print("range(5, 10) generates number from 5 to 9, no 10! - [5, 10)")
 for i in range(5, 10):
     print(i)
