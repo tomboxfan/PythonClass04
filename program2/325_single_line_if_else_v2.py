@@ -15,4 +15,9 @@ kids_or_adult = 'kids'                        if              age < 18          
 #               <value when it is true>       if              <boolean expression>    else            <value when it is false>
 
 
+
+kids_or_adult = 'kids' if age < 18 else 'adult'
+
+
+
 print(kids_or_adult)

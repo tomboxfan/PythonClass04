@@ -5,3 +5,9 @@ print(isApple)
 x = 18
 result = 'High' if x > 10 else 'Low'
 print(result)
+
+
+'''
+选学
+Optional learning
+'''
