@@ -17,3 +17,30 @@ Stop your program immediately, when you've printed 2 'WARNING'.
 69
 70 2 WARNING!
 '''
+
+warning_count = 0
+
+
+for i in range(1, 101):
+
+    '''
+    You put more strict conditions in the front, less strict conditions at the back
+    '''
+    if i % 5 == 0 and i % 7 == 0:
+
+        warning_count += 1
+        print(f"{i} WARNING {warning_count}!")
+
+        if warning_count == 2:
+            break
+
+
+    if i % 5 == 0:
+        continue
+
+    if i % 7 == 0:
+        continue
+
+
+
+    print(i)
