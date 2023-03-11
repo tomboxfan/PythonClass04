@@ -9,3 +9,18 @@
 4) Can you print all values in your list using loop? (VERY DIFFICULT)
 
 '''
+
+l = list(range(5))
+print(l)
+
+print(l[2])     # 2
+print(l[-2])    # 3
+
+l.insert(3, 'X')
+print(l)
+
+l.insert(-1, 'B')
+print(l)
+
+l.append("Q")
+print(l)

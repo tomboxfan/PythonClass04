@@ -14,3 +14,6 @@ animals.insert(100, "Giraffe") # When index > length of the list, it appends the
 print(animals)  # ['Tiger', 'Leopard', 'Elephant', 'Snake', 'Shark', 'Giraffe']
 
 # HOMEWORK, Please help insert Hedgehog at the place 2nd from the last
+
+animals.insert(-1, "hedgehog")
+print(animals)
